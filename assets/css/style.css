@@ -1,0 +1,579 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+/*++++++++++++++++++++++++++++
+COMMON CLASSES
+++++++++++++++++++++++++++++++ */
+.work-time-background-color{
+    background-color: #00a3c8;
+}
+.position-relative{
+    position: relative;
+}
+.position-absolute{
+    position: absolute;
+}
+.text-color{
+    color: #00a3c8;
+}
+.sections-padding{
+    padding-top: 95px;
+    padding-bottom: 95px;
+}
+.lineUp {
+    animation: 2s anim-lineUp;
+    animation-iteration-count: 1;
+}
+@keyframes anim-lineUp {
+	0% {
+	  opacity: 0;
+	  transform: translateY(80%);
+	}
+	20% {
+	  opacity: 0;
+	}
+	50% {
+	  opacity: 1;
+	  transform: translateY(0%);
+	}
+	100% {
+	  opacity: 1;
+	  transform: translateY(0%);
+	}
+  }
+  .banner-position{
+    background-position: center !important;
+    background-attachment: fixed !important;
+    position: relative;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+.banner-bg-black {
+    background:#000;
+    opacity: 0.5;
+    z-index: -1;
+}
+.heading-font{
+    font-size: 35px;
+}
+.pb-10{
+    padding-bottom: 25px;
+}
+.doctor-name-font{
+    font-size: 20px;
+    font-weight: bold;
+}
+.pt-15{
+    padding-top:95px
+}
+/* +++++++++++++++++++++++++++
+            HEADER
+++++++++++++++++++++++++++++++ */
+.header-appointment-btn{
+   border-color:#0eceea;
+
+}
+.header-position{
+    position: fixed;
+    z-index: 1;
+}
+.header-ptb{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.header-font{
+    font-size: 14px;
+}
+.header-color{
+    background-color: transparent;
+}
+.header-appointment-btn{
+    border-radius: 0;
+    padding: 15px;
+    width:150px;
+}
+.header-logo-color{
+    color:#0eceea; 
+}
+.darkHeader{
+    background-color: #000;
+}
+.logo-font{
+    font-size: 25px;
+}
+/* ++++++++++++++++++++++++
+    PARTICLE JS
++++++++++++++++++++++++++++ */
+
+/*+++++++++++++++++++++++++
+HERO SECTION
++++++++++++++++++++++++++++*/
+.hero-background {
+    background-image: url(../images/banner1.jpg);
+    height: 800px;
+   
+}
+.hero-heading{
+    font-size:60px;
+    font-weight: 700;
+}
+.hero-text-custom-white {
+    color: #ffffff;
+}
+.hero-text-position{
+    position: absolute;
+}
+.hero-back{
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.hero-btn {
+    padding: 20px;
+    display: inline-block;
+   
+    position: relative;
+    transition: color 0.3s;
+    width: 200px;
+    border-color: #0eceea;
+    border-width: revert;
+    /*animation: left-slide .3s;
+    transition: .5s;*/  
+}
+.hero-btn:before{
+    content: "";
+    background-color: #0eceea;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    bottom: 0;
+    z-index: -1;
+    transition: .5s;
+}
+
+.hero-btn:hover:before {
+    width: 100%;
+    transition: .5s;
+  }
+
+  /*@keyframes left-slide{
+    0%{
+        position: relative;
+        opacity: 0;
+        left: -30px;
+    }
+    100%{
+        opacity: 1;
+        left: 0px;
+    }
+  }*/
+
+
+  .hero-btn:hover {
+    color: white;
+  }
+  .hero-btn:hover {
+    transform: scaleX(1);
+  }
+/* ++++++++++++++++++++++
+APPOINTMENT
+++++++++++++++++++++++++ */
+.intro-box{
+    transition: 0.3s all;
+}
+.intro-box:hover{
+    transform: scale(1.05);
+    
+}
+.appointment-btn{
+    padding: 14px;
+    width: 200px;
+    border-color: white;
+    border-width: revert;
+    position: relative;
+    transition: color 0.3s;
+
+    }
+    .appointment-btn:before{
+        content: "";
+        background-color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0%;
+        bottom: 0;
+        z-index: -1;
+        transition: .5s;
+    }
+    
+    .appointment-btn:hover:before {
+        width: 100%;
+        transition: .5s;
+       
+      }
+      .appointment-btn:hover{
+        color:  #0eceea;
+      }
+
+.appointment-margin-60{
+   /* margin: 60px; */
+   padding: 60px;
+}
+.appointment-top{
+    top:-100px;
+}
+.appointment-border-bottom{
+    border-bottom: 1px dotted;
+    color: aliceblue;
+}
+.full-height {
+    height: 100%;
+}
+/* +++++++++++++++++++++
+ACHIEVEMENT
+++++++++++++++++++++++++ */
+.padding-right-icon{
+    padding-right: 140px;
+}
+.achievement{
+    font-size: 45px;
+    font-weight: bold;
+}
+.achievement-icon-font{
+    font-size: 55px;
+}
+.achievement-ptb{
+    padding-top:45px ;
+    padding-bottom: 45px;
+}
+/* +++++++++++++++++++++
+WELCOME SECTION
+++++++++++++++++++++++++ */
+.doctors-image-fit {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+    .img-border{
+        border-right: 55px solid #00a3c8;
+        height: 70%;
+        padding-left: 0;
+    }
+/* +++++++++++++++++++++
+SERVICE SECTION
+++++++++++++++++++++++++ */
+.icon-box {
+    margin-bottom: 20px;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #00a3c8;
+    color: #ffffff;
+    font-size: 40px;
+    transition: 0.5s;
+}
+.icon-box:hover{
+    border-radius: 80px;
+    transition: .5s;
+    background-color: #ffffff ;
+    
+}
+.icon-box img{
+    height: 100%;
+}
+.padding-20{
+    padding: 20px;
+}
+.main-service {
+    background-color: #ffffff;
+    box-shadow: 0 0px 1px 2px rgb(0 163 200 / 23%);
+    cursor: pointer;
+}
+.main-service:hover{
+  
+    background-color: #00a3c8;
+    transition: 0.5s;
+    color: white;
+}
+/* +++++++++++++++++++++++++++++
+BOOK APPOINTMENT
+++++++++++++++++++++++++++++++++ */
+.book-appointment {
+    background-image: url(../images/banner4.jpg) !important;
+   
+}
+.pattern {
+    background: url(../images/patteren.png) repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.form-position{
+    position: relative;
+}
+.appointment-ptb{
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+.form-padding{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.book-appointment {
+    background: none;
+    border-bottom: 1px solid #80808036;
+    border-radius: 0;
+}
+
+input {
+    border: unset !important;
+    border-bottom: 1px solid #80808045 !important;
+    background: none !important;
+    border-radius: 0;
+    border-radius: 0 !important;
+}
+.social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 44px;
+    padding-right: 22px;
+    color: #00a3c8;
+}
+.form-control{
+    padding: 0 !important;
+}
+/* +++++++++++++++++++++++++++
+            DEPARTMENTS
+++++++++++++++++++++++++++++++ */
+.dpt-img{
+    padding-top: 40px;
+}
+.dpt-bg{
+    background-color: rgba(174, 165, 165, 0.205);
+}
+
+.dpt-bg .inner-depart-img{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 30px;
+}
+.dpt-bg .inner-depart-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.img-mt-100{
+    margin-top: 100px;
+}
+.img-mt-25{
+    margin-top: 25px;
+}
+.dpt-self{
+    align-self: center;
+}
+.flip-box {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+}
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-box-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+/* ++++++++++++++++++++++++++++++
+            DOCTORS SECTION
++++++++++++++++++++++++++++++++++ */
+
+
+.card{
+    width: unset !important;
+}
+.overlay-box{
+    position: relative;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    
+}
+.p-relative{
+    position: relative;
+}
+.full-height{
+    height: 100%;
+}
+.team-social-box{
+    position: absolute;
+    left: -40px;
+    transform: translateY(-50%);
+    transition: .5s;
+}
+
+.card{
+    overflow: hidden;
+}
+.card:hover .team-social-box {
+    left: 5px;
+    transition: .5s;
+}
+.doctor:hover{
+    background-color:#08b7de67;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.team-social-box li a{
+    position: relative;
+    width: 36px;
+    height: 36px;
+    z-index: 1;
+    top: 0%;
+    display: inline-block;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0eceea;
+}
+.team-social-box li{
+    padding-bottom: 10px;
+}
+/* .team-social-box {
+*/
+/* ++++++++++++++++++++++++++++
+        JOINING CHANNEL
+++++++++++++++++++++++++++++++ */
+.channel{
+    background-color: #00a3c8;
+}
+.channel-font{
+    font-size: 40px;
+}
+.subscribe-btn{
+    border-radius: 0;
+    padding: 13px;
+    width: 169px;
+}
+.join{
+    background-color: white;
+    width: 295px;
+    /* height: 46px; */
+    height: 52px;
+    border: unset;
+}
+.join>input{
+    border: unset !important;
+}
+.subscribe-mail{
+    text-align: center;
+    font-size: 21px;
+    font-weight: bold;
+}
+/* ++++++++++++++++++++++++++++
+            TABLE 
++++++++++++++++++++++++++++++++ */
+.table-row-background{
+    background-color:  #00a3c8;
+}
+.table td, .table th {
+    padding: 1.75rem;
+}
+.table-time-color{
+    background-color: #00a3c8ab;
+    padding: 20px;
+}
+.table-background {
+    background-image: url(../images/banner5.jpg) !important;
+    
+}
+.table-col {
+    position: relative;
+    transition: color 0.3s; 
+}
+.table-col:before{
+    content: "";
+    background-color: #00a3c8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    bottom: 0;
+    z-index: -1;
+    transition: .5s;
+}
+
+.table-col:hover:before {
+    width: 100%;
+    transition: .5s;
+  }
+  .table-col:hover {
+    transform: scaleX(1);
+    color: white !important;
+  }
+.schedule-background{
+    background-color: rgba(108, 81, 81, 0.397);
+}
+.color-theme{
+	background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    padding-top: 95px;
+    padding-bottom: 95px;
+}
+.color-theme2{
+    background-color: #08b7de67;
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.position-relative{
+    position: relative;
+}
+.heading{
+top: 50px;
+}
